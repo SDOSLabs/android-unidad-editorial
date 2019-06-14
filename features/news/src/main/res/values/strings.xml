@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="date_format">%1$te %1$tb %1$tY - %1$tH:%1$tM</string>
+
+</resources>

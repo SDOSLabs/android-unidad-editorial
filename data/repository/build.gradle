@@ -1,0 +1,8 @@
+apply from: '../../base_data_dependencies.gradle'
+
+
+dependencies {
+    implementation project(Modules.dataApi)
+    implementation project(Modules.dataDatabase)
+    implementation project(Modules.dataModel)
+}

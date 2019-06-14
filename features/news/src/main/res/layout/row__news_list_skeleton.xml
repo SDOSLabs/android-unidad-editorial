@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="@dimen/horizontal_pading"
+        android:paddingEnd="@dimen/horizontal_pading"
+        android:paddingTop="@dimen/news_list__vertical_padding"
+        tools:context=".ui.fragment.NewsListFragment">
+
+    <TextView
+            style="@style/TextTitleRow"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape__skeleton"/>
+
+    <TextView
+            style="@style/TextSubtitleRow"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape__skeleton"/>
+
+    <TextView
+            style="@style/TextDate"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/news_list__date_top_padding"
+            android:background="@drawable/shape__skeleton"/>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginStart="@dimen/horizontal_pading"
+            android:layout_marginEnd="@dimen/horizontal_pading"
+            android:layout_marginTop="@dimen/news_list__vertical_padding"/>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+/**
+ * Data dependencies
+ */
+apply plugin: Plugins.androidLibrary
+apply from: '../../base_common.gradle'
+apply from: '../../test_dependencies.gradle'
+
+dependencies {
+
+    // KOTLIN
+    implementation Kotlin.coroutineAndroid
+    implementation Kotlin.coroutineCore
+    implementation Kotlin.ktxCore
+    implementation Kotlin.stdlibJdk7
+
+    // LIVEDATA
+    implementation Androidx.lifecycleExtensions
+
+    // DAGGER
+    implementation Dagger.core
+    kapt Dagger.coreAnnotations
+    implementation Dagger.androidSupport
+    kapt Dagger.androidAnnotations
+}

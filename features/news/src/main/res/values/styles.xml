@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BackgroundColor">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="TextTitleRow">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text__title</item>
+        <item name="android:fontFamily">@font/merriweather_bolditalic</item>
+    </style>
+
+    <style name="TextSubtitleRow">
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+        <item name="android:textColor">@color/text__black</item>
+        <item name="android:fontFamily">@font/merriweather_bold</item>
+    </style>
+
+    <style name="TextDate">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">12sp</item>
+        <item name="android:textColor">@color/text__date</item>
+        <item name="android:fontFamily">@font/libre_franklin_medium</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:textSize">32sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/text__title</item>
+        <item name="android:fontFamily">@font/merriweather_bolditalic</item>
+    </style>
+
+    <style name="TextSubtitle">
+        <item name="android:textSize">32sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/text__black</item>
+        <item name="android:fontFamily">@font/merriweather_bold</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">12sp</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:fontFamily">@font/libre_franklin_regular</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text__title">#28a6b8</color>
+    <color name="text__black">#00000e</color>
+    <color name="text__date">#4a4a4a</color>
+    <color name="text">#303030</color>
+    <color name="text__date_night">#9b9b9b</color>
+    <color name="background_night">#1d1d20</color>
+    <color name="divider">#ebebeb</color>
+</resources>

@@ -1,0 +1,20 @@
+apply plugin: Plugins.androidLibrary
+apply from: '../base_common.gradle'
+apply from: '../base_common_dependencies.gradle'
+apply from: '../test_dependencies.gradle'
+apply plugin: Plugins.navigationSafeArgsKotlin
+
+
+android {
+    dataBinding {
+        enabled true
+    }
+    testOptions {
+        animationsDisabled = true
+    }
+}
+
+dependencies {
+    implementation project(Modules.navigation)
+    implementation project(Modules.dataRepository)
+}

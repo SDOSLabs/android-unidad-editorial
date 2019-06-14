@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="an_error_happened">Ha ocurrido un error, compruebe su conexión e inténtelo de nuevo</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_graph__news_feature"
+            app:startDestination="@id/newsListFragment">
+
+    <fragment
+            android:id="@+id/newsListFragment"
+            android:name="es.sdos.android.project.news.ui.fragment.NewsListFragment"
+            android:label="News List">
+
+        <action android:id="@+id/go_to_newsDetailFragment"
+                app:destination="@id/newsDetailFragment"
+                app:popUpToInclusive="true"
+                app:enterAnim="@anim/nav_default_pop_enter_anim"
+                app:exitAnim="@anim/nav_default_pop_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <!--<argument android:name="id" app:argType="long"/>-->
+        </action>
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/newsDetailFragment"
+            android:name="es.sdos.android.project.news.ui.fragment.NewsDetailFragment"
+            android:label="News Detail">
+
+        <argument android:name="id" app:argType="long"/>
+    </fragment>
+
+</navigation>

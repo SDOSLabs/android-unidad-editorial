@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+                name="viewmodel"
+                type="es.sdos.android.project.news.ui.viewmodel.NewsDetailViewModel"/>
+    </data>
+
+    <ScrollView
+            style="@style/BackgroundColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/news_detail__vertical_padding"
+                android:paddingBottom="@dimen/news_detail__vertical_padding"
+                android:paddingStart="@dimen/horizontal_pading"
+                android:paddingEnd="@dimen/horizontal_pading"
+                tools:context=".ui.fragment.NewsListFragment">
+
+            <TextView
+                    style="@style/TextTitle"
+                    android:id="@+id/news_detail__label__title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewmodel.getNewsDetail().title}"
+                    android:transitionName="@string/transition__title"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                    style="@style/TextSubtitle"
+                    android:id="@+id/news_detail__label__subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewmodel.getNewsDetail().subtitle}"
+                    android:transitionName="@string/transition__subtitle"
+                    app:layout_constraintTop_toBottomOf="@id/news_detail__label__title"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                    style="@style/TextDate"
+                    android:id="@+id/news_detail__label__date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0"
+                    android:text="@{@string/date_format(viewmodel.getNewsDetail().date)}"
+                    android:layout_marginTop="@dimen/news_detail__date_padding"
+                    android:visibility="@{viewmodel.getNewsDetail().date != null ? View.VISIBLE : View.INVISIBLE}"
+                    app:layout_constraintTop_toBottomOf="@id/news_detail__label__subtitle"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                    style="@style/Text"
+                    android:alpha="0"
+                    android:id="@+id/news_detail__label__body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewmodel.getNewsDetail().body}"
+                    android:layout_marginTop="@dimen/news_detail__date_padding"
+                    app:layout_constraintTop_toBottomOf="@id/news_detail__label__date"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <FrameLayout
+                    style="@style/BackgroundColor"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/news_detail__label__body"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:showWhenLoading="@{viewmodel.getNewsDetailResource()}">
+
+                <ProgressBar
+                        style="@style/Widget.AppCompat.ProgressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

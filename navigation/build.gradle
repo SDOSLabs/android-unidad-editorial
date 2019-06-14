@@ -1,0 +1,8 @@
+apply plugin: 'com.android.library'
+apply from: '../base_common.gradle'
+apply plugin: Plugins.navigationSafeArgsKotlin
+
+dependencies {
+    implementation Androidx.navigation
+    implementation Androidx.navigationFragment
+}

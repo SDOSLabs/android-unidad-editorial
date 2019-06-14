@@ -1,0 +1,23 @@
+apply plugin: Plugins.kotlinAndroid
+apply plugin: Plugins.kotlinExtensions
+apply plugin: Plugins.kotlinApt
+
+android {
+    compileSdkVersion AppConfig.compileSdkVersion
+    defaultConfig {
+        minSdkVersion AppConfig.minSdkVersion
+        targetSdkVersion AppConfig.targetSdkVersion
+        versionCode AppConfig.versionCode
+        versionName AppConfig.versionName
+        testInstrumentationRunner AppConfig.testInstrumentationRunner
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+        }
+    }
+}
+
+dependencies {
+    implementation Kotlin.stdlibJdk7
+}

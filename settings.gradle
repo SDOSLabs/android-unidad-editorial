@@ -1,0 +1,9 @@
+include Modules.app,
+    Modules.navigation,
+    Modules.featureLauncher,
+    Modules.featureNews,
+    Modules.common,
+    Modules.dataApi,
+    Modules.dataDatabase,
+    Modules.dataModel,
+    Modules.dataRepository

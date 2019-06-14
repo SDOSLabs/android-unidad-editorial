@@ -1,0 +1,19 @@
+/**
+ * Android test dependencies
+ */
+dependencies {
+    // ANDROID TEST
+    androidTestImplementation AndroidTest.core
+    androidTestImplementation AndroidTest.espressoCore
+    androidTestImplementation AndroidTest.runner
+    // KOIN
+    androidTestImplementation AndroidTest.koin
+    // ANDROID
+    androidTestImplementation AndroidTest.archCoreTest
+    androidTestImplementation AndroidTest.junit
+    // MOCK
+    androidTestImplementation AndroidTest.mockk
+
+
+
+}

@@ -1,0 +1,26 @@
+/**
+ * Shared dependencies between modules
+ */
+dependencies {
+    // KOTLIN
+    implementation Kotlin.coroutineAndroid
+    implementation Kotlin.coroutineCore
+    implementation Kotlin.ktxCore
+    implementation Kotlin.stdlibJdk7
+
+    // ANDROID
+    implementation Androidx.appcompat
+    implementation Androidx.constraintlayout
+    implementation Androidx.lifecycleExtensions
+    implementation Androidx.lifecycleViewModel
+    implementation Androidx.navigation
+    implementation Androidx.navigationFragment
+    implementation Androidx.recyclerView
+
+    // DAGGER
+    implementation Dagger.core
+    kapt Dagger.coreAnnotations
+    implementation Dagger.androidSupport
+    kapt Dagger.androidAnnotations
+
+}

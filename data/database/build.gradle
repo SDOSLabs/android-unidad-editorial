@@ -1,0 +1,8 @@
+apply from: '../../base_data_dependencies.gradle'
+
+
+dependencies {
+    kapt Androidx.roomAnnotations
+    api Androidx.room
+    implementation Androidx.roomKtx
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_pading">18dp</dimen>
+
+    <dimen name="news_list__vertical_padding">24dp</dimen>
+    <dimen name="news_list__date_top_padding">17dp</dimen>
+    <dimen name="news_list__toolbar_height">84dp</dimen>
+    <dimen name="news_list__padding_logo">20dp</dimen>
+
+    <dimen name="news_detail__date_padding">32dp</dimen>
+    <dimen name="news_detail__vertical_padding">49dp</dimen>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_graph__launcher_feature"
+            app:startDestination="@id/launcherFragment">
+
+    <fragment
+            android:id="@+id/launcherFragment"
+            android:name="es.sdos.android.project.launcher.ui.fragment.LauncherFragment"
+            android:label="Launcher">
+
+        <action
+                android:id="@+id/go_to_newsListFragment"
+                app:destination="@id/nav_graph__news_feature"
+                app:popUpTo="@id/launcherFragment"
+                app:popUpToInclusive="true"
+                app:enterAnim="@anim/nav_default_pop_enter_anim"
+                app:exitAnim="@anim/nav_default_pop_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+    </fragment>
+
+    <include app:graph="@navigation/nav_graph__news_feature"/>
+
+</navigation>

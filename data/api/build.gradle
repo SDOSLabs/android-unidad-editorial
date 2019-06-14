@@ -1,0 +1,8 @@
+apply from: '../../base_data_dependencies.gradle'
+
+
+dependencies {
+    implementation Retrofit.core
+    implementation Retrofit.gson
+    implementation Retrofit.httpLoggingInterceptor
+}
