@@ -8,7 +8,7 @@ import java.util.*
 @Dao
 abstract class NewsDao : BaseDao<NewsDBO>() {
 
-    @Query("SELECT * FROM News ORDER BY date DESC")
+    @Query("SELECT * FROM News ORDER BY id DESC")
     abstract suspend fun getNewsList(): List<NewsDBO>
 
     @Query("SELECT * FROM News WHERE id = :id LIMIT 1")
